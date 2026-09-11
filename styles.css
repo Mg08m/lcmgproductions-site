@@ -133,6 +133,18 @@ a { color: inherit; }
 
 .rugby .tag { color: var(--crimson-hot); }
 .hurling .tag { color: var(--saffron); }
+.more .tag { color: var(--dim); }
+
+.game.more { border-style: dashed; }
+.crest-more {
+  display: grid;
+  place-items: center;
+  font-family: Anton, Impact, sans-serif;
+  font-size: 96px;
+  color: #3a3235;
+  border: 2px dashed #3a3235;
+  border-radius: 24px;
+}
 
 .game p { color: #d8d2d4; max-width: 52ch; }
 
