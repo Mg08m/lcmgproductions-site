@@ -13,6 +13,12 @@ Already locked and used here:
 - Anton wordmark
 - Both crests
 
+Fonts are self-hosted in `fonts/` (Anton and Inter, both SIL Open Font License 1.1, latin subsets
+from Google Fonts) so the page makes no third-party request.
+
+`og:image` and `canonical` point at the GitHub Pages address until `lcmgproductions.com` resolves;
+swap both back to the domain on go-live.
+
 Site extras in `assets/`:
 - `favicon.ico` — 32 / 64 / 128 charcoal crests
 - `og-1200x630.jpg` — lock-up crop for Reddit, X, WhatsApp

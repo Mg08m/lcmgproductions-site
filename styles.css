@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Anton";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/anton-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("fonts/inter-latin.woff2") format("woff2");
+}
+
 :root {
   --ground: #191617;
   --panel: #241f21;
@@ -156,6 +171,31 @@ a { color: inherit; }
   color: var(--dim);
 }
 
+.progress { display: grid; gap: 18px; margin-top: 28px; }
+.progress dt {
+  font-family: Anton, Impact, sans-serif;
+  letter-spacing: 0.04em;
+  color: var(--saffron);
+  margin-bottom: 4px;
+}
+.progress div:nth-child(2) dt { color: var(--crimson-hot); }
+.progress div:nth-child(3) dt { color: var(--ink); }
+.progress dd { color: #d8d2d4; max-width: 60ch; }
+
+.privacy {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 64px 28px 80px;
+  border-top: 1px solid #2e2729;
+}
+.privacy h2 {
+  font-family: Anton, Impact, sans-serif;
+  font-size: clamp(28px, 4vw, 40px);
+  margin: 8px 0 18px;
+}
+.privacy p { color: #d8d2d4; max-width: 64ch; margin-bottom: 14px; }
+.privacy a { color: var(--saffron); }
+
 .studio {
   border-top: 1px solid #2e2729;
   border-bottom: 1px solid #2e2729;
@@ -173,30 +213,6 @@ a { color: inherit; }
 }
 
 .studio p { max-width: 62ch; color: #d8d2d4; }
-
-.tokens {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px 28px;
-  list-style: none;
-  margin-top: 32px;
-  color: var(--dim);
-  font-size: 13px;
-  letter-spacing: 0.06em;
-}
-
-.swatch {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin-right: 8px;
-  vertical-align: -1px;
-  border: 1px solid #3a3336;
-}
-.swatch.ground { background: var(--ground); }
-.swatch.ink { background: var(--ink); }
-.swatch.crimson { background: var(--crimson); }
-.swatch.saffron { background: var(--saffron); }
 
 .contact {
   max-width: var(--max);
