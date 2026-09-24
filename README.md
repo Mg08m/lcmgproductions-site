@@ -16,8 +16,7 @@ Already locked and used here:
 Fonts are self-hosted in `fonts/` (Anton and Inter, both SIL Open Font License 1.1, latin subsets
 from Google Fonts) so the page makes no third-party request.
 
-`og:image` and `canonical` point at the GitHub Pages address until `lcmgproductions.com` resolves;
-swap both back to the domain on go-live.
+`og:image` and `canonical` point at `lcmgproductions.com` (live on GitHub Pages via Cloudflare DNS since 2026-09-24).
 
 Site extras in `assets/`:
 - `favicon.ico` — 32 / 64 / 128 charcoal crests
@@ -40,4 +39,4 @@ Cloudflare Pages / Netlify / GitHub Pages:
 2. Set the domain to `lcmgproductions.com`.
 3. Create the mailbox `hello@lcmgproductions.com` or change the mailto.
 
-The domain currently returns 503, so DNS/hosting is the remaining step.
+Live: four A records to GitHub Pages + `www` CNAME to `mg08m.github.io`, all DNS-only in Cloudflare; Pages custom domain set.
