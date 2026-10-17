@@ -171,6 +171,61 @@ a { color: inherit; }
   color: var(--dim);
 }
 
+.actions { margin-top: 18px; }
+.btn {
+  display: inline-block;
+  font-family: Anton, Impact, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 12px 22px;
+  background: var(--saffron);
+  color: var(--ground);
+  border: 1px solid var(--saffron);
+}
+.btn:hover { background: var(--ink); border-color: var(--ink); }
+
+.know { margin-top: 22px; max-width: 60ch; }
+.know summary {
+  cursor: pointer;
+  color: var(--saffron);
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.know ul { margin: 12px 0 0 18px; color: #d8d2d4; font-size: 15px; }
+.know li { margin-bottom: 6px; }
+
+.signup { margin-top: 26px; max-width: 60ch; }
+.signup label { display: block; color: #d8d2d4; margin-bottom: 10px; }
+.signup .row { display: flex; gap: 10px; flex-wrap: wrap; }
+.signup input {
+  flex: 1 1 240px;
+  min-width: 0;
+  padding: 12px 14px;
+  font: inherit;
+  font-size: 16px;
+  background: var(--ground);
+  color: var(--ink);
+  border: 1px solid #3a3235;
+}
+.signup input:focus { outline: 2px solid var(--saffron); outline-offset: 1px; }
+.signup button {
+  font-family: Anton, Impact, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 12px 22px;
+  background: var(--saffron);
+  color: var(--ground);
+  border: 1px solid var(--saffron);
+  cursor: pointer;
+}
+.signup button:hover { background: var(--ink); border-color: var(--ink); }
+.signup .fine { margin-top: 10px; font-size: 13px; color: var(--dim); max-width: none; }
+.signup .fine a { color: var(--saffron); }
+
 .progress { display: grid; gap: 18px; margin-top: 28px; }
 .progress dt {
   font-family: Anton, Impact, sans-serif;
