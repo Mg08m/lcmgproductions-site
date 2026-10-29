@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Last Chance Hurling — Player Guide</title>
+  <meta name="description" content="How to play Last Chance Hurling: the controls on a pad and keyboard, how to score points and goals, winning the ball, defending, match day and Early Access." />
+  <meta name="theme-color" content="#191617" />
+  <link rel="icon" href="../../assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="../../assets/favicon-128.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="LCMG Productions" />
+  <meta property="og:title" content="Last Chance Hurling — Player Guide" />
+  <meta property="og:description" content="Controls, scoring, winning the ball, defending and match day. Two pages for players." />
+  <meta property="og:image" content="https://lcmgproductions.com/assets/og-1200x630.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="canonical" href="https://lcmgproductions.com/hurling/guide/" />
+  <style>
+    .guide { max-width: var(--max); margin: 0 auto; padding: 56px 28px 80px; }
+    .guide-head { display: grid; grid-template-columns: 120px 1fr; gap: 28px; align-items: center; margin-bottom: 40px; }
+    .guide-head img { width: 120px; height: 120px; object-fit: contain; }
+    .guide-head h1 { font-family: Anton, Impact, sans-serif; font-size: clamp(44px, 8vw, 88px); line-height: 0.92; letter-spacing: 0.02em; }
+    .guide-head .sub { margin-top: 12px; letter-spacing: 0.24em; color: var(--dim); font-size: 13px; text-transform: uppercase; }
+    .guide section { border-top: 1px solid #2e2729; padding: 36px 0; }
+    .guide h2 { font-family: Anton, Impact, sans-serif; font-size: clamp(28px, 4vw, 40px); letter-spacing: 0.03em; color: var(--saffron); margin-bottom: 16px; }
+    .guide p { color: #d8d2d4; max-width: 68ch; margin-bottom: 14px; }
+    .guide ul { color: #d8d2d4; max-width: 68ch; margin: 0 0 14px 20px; }
+    .guide li { margin-bottom: 10px; }
+    .guide strong { color: var(--ink); font-weight: 600; }
+    .scores { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: 640px; margin: 8px 0 22px; }
+    .score { background: var(--panel); border: 1px solid #2e2729; padding: 18px 20px; display: flex; align-items: center; gap: 18px; }
+    .score .num { font-family: Anton, Impact, sans-serif; font-size: 56px; line-height: 1; color: var(--saffron); }
+    .score .name { font-family: Anton, Impact, sans-serif; font-size: 22px; letter-spacing: 0.06em; }
+    .score .how { color: var(--dim); font-size: 14px; margin: 0; }
+    .modes { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-top: 8px; }
+    .mode { background: var(--panel); border: 1px solid #2e2729; padding: 14px 16px; }
+    .mode b { display: block; color: var(--ink); font-weight: 600; margin-bottom: 4px; }
+    .mode span { color: var(--dim); font-size: 14px; }
+    .tablewrap { overflow-x: auto; margin: 8px 0 22px; border: 1px solid #2e2729; }
+    table.controls { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 15px; }
+    table.controls th { text-align: left; font-family: Anton, Impact, sans-serif; font-weight: 400; letter-spacing: 0.08em; font-size: 14px; color: var(--saffron); background: var(--panel); padding: 12px 14px; border-bottom: 1px solid #3a3235; }
+    table.controls td { padding: 10px 14px; border-bottom: 1px solid #2e2729; color: #d8d2d4; vertical-align: top; }
+    table.controls td:first-child { color: var(--ink); font-weight: 600; white-space: nowrap; }
+    table.controls tr.key td { background: #2a2225; }
+    .callouts { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+    .callout { border-left: 3px solid var(--saffron); padding: 4px 0 4px 16px; color: #d8d2d4; }
+    .callout b { color: var(--ink); font-weight: 600; }
+    .note { color: var(--dim); font-size: 14px; }
+    .guide a { color: var(--saffron); }
+    @media (max-width: 720px) {
+      .guide-head { grid-template-columns: 1fr; }
+      .scores { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <a class="wordmark" href="../../">LCMG</a>
+    <nav>
+      <a href="../../#games">Games</a>
+      <a href="#controls">Controls</a>
+      <a href="#score">Scoring</a>
+      <a href="../../#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top" class="guide">
+    <div class="guide-head">
+      <img src="../../assets/lch-crest.png" alt="Last Chance Hurling crest" />
+      <div>
+        <p class="kicker">Last Chance Hurling</p>
+        <h1>PLAYER GUIDE</h1>
+        <p class="sub">Early Access · PC · Controller first</p>
+      </div>
+    </div>
+
+    <section id="game">
+      <h2>The game in one minute</h2>
+      <p>Hurling: fifteen a side, a stick (the hurley) and a small ball (the sliotar). Win the ball, run with it balanced on the stick, and strike it between the posts.</p>
+      <div class="scores">
+        <div class="score"><div class="num">1</div><div><div class="name">POINT</div><p class="how">Over the bar, between the posts</p></div></div>
+        <div class="score"><div class="num">3</div><div><div class="name">GOAL</div><p class="how">Under the bar, past the keeper</p></div></div>
+      </div>
+      <p>Built for a controller. Keyboard and mouse work too; the in-game Controls sheet shows your own bindings.</p>
+      <div class="modes">
+        <div class="mode"><b>Quick Match (7v7)</b><span>A short game on a full pitch. The fastest way to learn the strike.</span></div>
+        <div class="mode"><b>Full Match (15v15)</b><span>The real thing: two full teams, both halves, the walk-out and anthem.</span></div>
+        <div class="mode"><b>Competitions</b><span>County league and championship fixtures with your team sheet.</span></div>
+        <div class="mode"><b>Career</b><span>Pick your county and club, set your team, train your players, build the club's standing season by season. Five slots.</span></div>
+        <div class="mode"><b>Practice</b><span>Drills: shooting, passing, 2v1, 3v2.</span></div>
+      </div>
+    </section>
+
+    <section id="controls">
+      <h2>Controls</h2>
+      <p class="note">Pad buttons are Xbox names. Hold means keep it pressed while you act.</p>
+      <div class="tablewrap">
+        <table class="controls">
+          <thead>
+            <tr><th>Pad</th><th>Keyboard</th><th>With the ball</th><th>Without it</th><th>Under a dropping ball</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Left stick</td><td>W A S D</td><td>Run</td><td>Run</td><td>Get under it</td></tr>
+            <tr class="key"><td>Right stick</td><td>Hold B or right mouse, aim with the mouse, release</td><td><strong>Pull back, then flick: the strike</strong></td><td></td><td><strong>Bat it.</strong> The flick picks where the break goes</td></tr>
+            <tr><td>X</td><td>Space or left mouse</td><td>Short strike (a point on Junior B and A)</td><td>Ground strike, or hook</td><td>Bat it</td></tr>
+            <tr><td>A</td><td>E</td><td></td><td>Pick up a loose ball, or block</td><td><strong>Catch it</strong></td></tr>
+            <tr><td>B</td><td>F</td><td>Hand pass</td><td>Shoulder, side-on</td><td>Shoulder in</td></tr>
+            <tr><td>Y</td><td>Q</td><td></td><td>Switch to another man</td><td></td></tr>
+            <tr><td>RB</td><td>G</td><td>Solo: run with the ball on the stick</td><td></td><td></td></tr>
+            <tr><td>LB</td><td></td><td></td><td>Hold: brace</td><td>Hold: brace. It counts here</td></tr>
+            <tr><td>LT</td><td>Ctrl</td><td>Hold: short</td><td></td><td></td></tr>
+            <tr><td>RT</td><td>C</td><td>Hold: go for goal, low</td><td></td><td></td></tr>
+            <tr><td>Back</td><td>V</td><td colspan="3">Camera: broadcast, close, high, TV</td></tr>
+            <tr><td>Right stick click + D-pad</td><td>T + D-pad</td><td colspan="3">Coach a line: push up or drop, narrow or widen. Tap to cycle which line you are coaching</td></tr>
+            <tr><td>Start</td><td>Esc</td><td colspan="3">Pause. At any dead ball, the tactics board</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callouts">
+        <div class="callout"><b>Your puck-out.</b> It waits for you. Left stick aims side and range, right stick fine-aims, X strikes it. Hold LB for low and short, RB for long and high, both for a low drive.</div>
+        <div class="callout"><b>Frees and sideline cuts.</b> They wait too. Aim with the left stick, X when ready.</div>
+      </div>
+    </section>
+
+    <section id="score">
+      <h2>How to score</h2>
+      <p>Points come from the right stick. Face the posts, pull the stick back, hold it a beat, then flick it through toward the posts. The flick is your aim: straight at the posts is straight, off to a side drifts.</p>
+      <ul>
+        <li><strong>Plant your feet.</strong> Let go of the left stick as you strike. Running, or a man on you, makes the strike wobble.</li>
+        <li><strong>Pick your range.</strong> From 20 to 45 m a clean strike carries over the bar. From further out it needs a pure one.</li>
+        <li><strong>Read the word.</strong> After every strike the game tells you how clean it was and why: off the sweet spot, on the run, a man on you. That word is your coaching.</li>
+        <li><strong>Goals.</strong> Inside 20 m, hold RT while you strike to keep it low and under the bar. The keeper reads a slow ball, so hit it.</li>
+        <li><strong>The short strike.</strong> X is a safe medium strike for moving the ball on. On the Junior B and Junior A grades it scores too; from Intermediate up only the right stick scores.</li>
+        <li><strong>Hand pass.</strong> B finds the best team-mate within 40 m: a hand pass inside 12 m, a short stick pass beyond that. If nobody is on, you keep the ball.</li>
+      </ul>
+    </section>
+
+    <section id="defend">
+      <h2>Winning the ball and defending</h2>
+      <p>Most possession is won under a dropping ball or on the ground, not handed over. Get there early and choose.</p>
+      <ul>
+        <li><strong>A dropping ball.</strong> Get under it with the left stick. A catches it, X bats it (flick the right stick to pick where the break goes), B shoulders the man beside you, hold LB to brace. A good catch is yours to run with; a bat sends it loose to where you flicked.</li>
+        <li><strong>A loose ball.</strong> A picks it up. Off the ground you may also strike it where it lies with X.</li>
+        <li><strong>Marking.</strong> Y switches you to the man nearest the play. Stay goal-side of your man. B is the shoulder, side-on; a shoulder from behind or front-on is a free against you.</li>
+        <li><strong>Stopping a strike.</strong> A blocks, X hooks the hurley as he swings. Both need you close and timed to his swing, not to the ball.</li>
+        <li><strong>The keeper.</strong> You do not control him. He reads the ball and narrows the angle. The puck-out is yours to aim and strike.</li>
+      </ul>
+      <p>Timing beats pressing early. The contest is decided on when you commit, so wait for the ball rather than the man.</p>
+    </section>
+
+    <section id="matchday">
+      <h2>Match day, half time and options</h2>
+      <p>A full match starts with the walk-out and the anthem, helmets off. Press the prompted button to skip it. The referee throws in, umpires flag every score, and the commentary and crowd follow the play.</p>
+      <ul>
+        <li><strong>Half time.</strong> The board shows both teams' shots. From it you can change your shape and your puck-out plan before the second half.</li>
+        <li><strong>Difficulty.</strong> Easy and Normal give your striking some help. Measured gives none: what you swing is what you get. In Career the grade of your club (Junior B up to Senior) sets how good the opposition is and whether X scores.</li>
+        <li><strong>Camera.</strong> Back cycles broadcast, close, high and TV. In the pause menu, "camera switches sides at half-time" is off by default, so the teams change ends as they do in a real match. Turn it on if you prefer to always attack the same way.</li>
+        <li><strong>Coaching in play.</strong> Hold the right stick click (T on a keyboard) and use the D-pad to push a line up or drop it, narrow or widen it. Tap to cycle which line you are coaching.</li>
+        <li><strong>Pause.</strong> Start opens the pause menu and, at any dead ball, the tactics board.</li>
+      </ul>
+    </section>
+
+    <section id="early-access">
+      <h2>Early Access</h2>
+      <p>Last Chance Hurling is in Early Access. In it today: full 15-a-side and 7-a-side hurling against the AI, strikes from the hand and off the ground, hooks, blocks and shoulders, puck-outs you shape, sideline cuts and frees you aim, penalties, keepers who read the ball, match day with the walk-out and anthem, a club career, competitions and practice drills.</p>
+      <p>Still being worked on: animation polish, the camera on long balls, the AI's attacking play against a human, and deeper competitions.</p>
+      <p>If something looks wrong, tell us what you were doing and what you expected at <a href="mailto:hello@lcmgproductions.com">hello@lcmgproductions.com</a>. The match log in your Godot user folder helps us find it. Updates and known issues land first on the <a href="https://store.steampowered.com/app/5331970/?utm_source=lcmgsite&amp;utm_medium=web&amp;utm_campaign=hurling_guide" rel="noopener">Steam page</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot-row">
+      <span>LCMG Productions</span>
+      <span>Last Chance</span>
+    </div>
+    <p class="legal">
+      L.C.M.G Productions Limited &middot; Company number 17412391 &middot;
+      Registered in England and Wales
+    </p>
+  </footer>
+</body>
+</html>
